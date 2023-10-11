@@ -43,6 +43,8 @@ def gauss_jordan(a, b):
                     ab[k,j] += c * ab[i,j]
 
             print(f"\\underrightarrow{{ R_{k+1} + ({sp.latex(c)})R_{i+1} }}")
+            if k%2 == 0:
+              print(f"\\\\")
             print(sp.latex(ab))
 
     # Make diagonal elements 1 and all elements above diagonal 0
@@ -64,10 +66,12 @@ def gauss_jordan(a, b):
                     ab[k,j] += c * ab[i,j]
 
             print(f"\\underrightarrow{{ R_{k+1} + ({sp.latex(c)})R_{i+1} }}")
+            if k%2 == 0:
+              print(f"\\\\")
             print(sp.latex(ab))
 
 # Define your matrices here
-a = np.array([[2, 1, -1], [-3, -1, 2], [-2, 1, 2]])
-b = np.array([[8], [-11], [-3]])
+a = np.array([ [-1,1] , [-3,0] ])
+b = np.array([ [-1] , [3] ])
 
 gauss_jordan(a, b)
