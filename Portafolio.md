@@ -3479,12 +3479,46 @@ No lo es debido a que cualquier suma de $\begin{bmatrix}
 
 #### Sea $T:P_2 \rightarrow P_1$ la transformación lineal tal que $\begin{cases}T(1 + x + x^2) = -1 + 3x \\T(1 + x - x^2) = -3 + 2x \\T(1 - x + x^2) = 1 + 2x\end{cases}$.  Determine $T(a + bx + cx^2)$ y $T(-25 + 15x - 10x^2)$
 
+Tenemos que obtener la combinación lineal de los argumentos de las funciones dadas con los argumentos de la función a calcular, obteniendo
+
+$$
+\begin{bmatrix}
+C_1\\C_2\\C_3
+\end{bmatrix}
+=
+\begin{bmatrix}
+    a - b + c \\
+    b - a + c \\
+    a + b + c
+\end{bmatrix} \\ \therefore \\
+T(a + bx + cx^2) = (a - b + c)(-1 + 3x) + (b-a+c)(-3+2x) + (a+b+c)(1+2x) \\
+T(-25 + 15x - 10x^2) = -130x-60
+$$
+
 ### Actividad 3.4 Eigenvalores y eigenvectores
 
-#### Determina el polinomio característico de $\begin{bmatrix}1 & 2 & 1 \\ 0 & 1 & 2 \\ -1 & 2 & 1\end{bmatrix}$  
-#### Determina el polinomio característico de $\begin{bmatrix}4&2\\3&3\end{bmatrix}$  
+#### Determina el polinomio característico de $\begin{bmatrix}1 & 2 & 1 \\ 0 & 1 & 2 \\ -1 & 2 & 1\end{bmatrix}$ 
+
+$$
+p(A) = \lambda^3 - tr(A)\lambda^2  + (A_{11} + A_{22} + A_{33})\lambda - det(A) = \lambda^3 - 3\lambda^2 + 3\lambda +6
+$$
+
+#### Determina el polinomio característico de $\begin{bmatrix}4&2\\3&3\end{bmatrix}$
+
+$$
+p(A) = \lambda^2 - tr(A)\lambda + det(A) = \lambda^2 - 7\lambda + 6
+$$
 
 #### Determina el polinomio característico, los valores propios y los valores propios de cada matriz de $\begin{bmatrix}2 & -2 & 3\\0&3&-2\\0&-1&2\end{bmatrix}$
+
+$$
+p(A) = \lambda^3 - tr(A)\lambda^2  + (A_{11} + A_{22} + A_{33})\lambda - det(A) =  - \lambda^3 + 7\lambda^2 - 14\lambda + 8 \\
+\begin{cases}
+\lambda_1 = 4\\
+\lambda_2 = 2\\
+\lambda_3 = 1\\
+\end{cases}
+$$
 
 #### Determina la base para el espacio propio de $\begin{bmatrix}4&2&0&0\\3&3&0&0\\0&0&2&5\\0&0&0&2\end{bmatrix}$ dado $\lambda = 2$
 
