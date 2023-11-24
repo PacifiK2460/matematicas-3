@@ -1,9 +1,6 @@
+#### Operaciones con matrices
 
-## Primer Parcial
-
-### Operaciones con matrices
-
-#### 1. Sea $A = \begin{pmatrix} 1 & 1 & 3 \\ 5 & 2 & 6\\ -2 & -1& -3\end{pmatrix}$, aproxime $\cos{2A}$ con una serie de Maclaurin
+##### 1. Sea $A = \begin{pmatrix} 1 & 1 & 3 \\ 5 & 2 & 6\\ -2 & -1& -3\end{pmatrix}$, aproxime $\cos{2A}$ con una serie de Maclaurin
 
 $$
 2A = \begin{pmatrix}
@@ -58,7 +55,7 @@ cos(2A) = 1 - \frac{2A^2}{2!} + \frac{2A^4}{4!} - \frac{2A^6}{6!} = 1 - \frac{2\
 0&0&0\\0&0&0\\0&0&0\end {pmatrix}\right) \\ = 1- \begin{pmatrix} 0&0&0\\6&6&18\\-2&-2&-6\end{pmatrix}
 $$
 
-#### 2. Sea $A = \begin{pmatrix} -1 & 2& 2&\\1 & x & 0\\2&3&1\end{pmatrix}$ y $B = \begin{pmatrix}3&-1&1\\0&-3&1\\-2&0&x \end{pmatrix}$. ¿Cuál es el valor de $x$ para que $Traza(A-3I_3+B^T) = 13$?
+##### 2. Sea $A = \begin{pmatrix} -1 & 2& 2&\\1 & x & 0\\2&3&1\end{pmatrix}$ y $B = \begin{pmatrix}3&-1&1\\0&-3&1\\-2&0&x \end{pmatrix}$. ¿Cuál es el valor de $x$ para que $Traza(A-3I_3+B^T) = 13$?
 
 $$
 I_3 =  \begin{pmatrix}1&0&0\\0&1&0\\0&0&1\end{pmatrix}
@@ -77,13 +74,13 @@ Traza(\begin{pmatrix}-1&2&0\\0&x-6&0\\3&4&x-2\end{pmatrix}) \rightarrow \begin{a
 \end{align*}
 $$
 
-#### 3. Dada la matriz $A= \begin{pmatrix} -1&7&2\\0&-5&8 \end{pmatrix}$, determine una matrix $B$ yal que $BA = \begin{pmatrix} -3 & 9 & 0 \\ 4 & 0 & 1 \end{pmatrix}$
+##### 3. Dada la matriz $A= \begin{pmatrix} -1&7&2\\0&-5&8 \end{pmatrix}$, determine una matrix $B$ yal que $BA = \begin{pmatrix} -3 & 9 & 0 \\ 4 & 0 & 1 \end{pmatrix}$
 
 $$
 B = (BA)A^{-1} =  \begin{pmatrix} -3 & 9 & 0 \\ 4 & 0 & 1 \end{pmatrix}
 $$
 
-#### 4. Encuentre las matrices $A$ y $B$ que resuelven el sistema $\begin{cases} 2A + B = \begin{pmatrix} 1 & -4 \\ 6 & 0 \end{pmatrix} \\ A -3B = \begin{pmatrix} -2 &  1 \\ 3 & -4 \end{pmatrix} \end{cases}$
+##### 4. Encuentre las matrices $A$ y $B$ que resuelven el sistema $\begin{cases} 2A + B = \begin{pmatrix} 1 & -4 \\ 6 & 0 \end{pmatrix} \\ A -3B = \begin{pmatrix} -2 &  1 \\ 3 & -4 \end{pmatrix} \end{cases}$
 
 $$
 2A + B \rightarrow \begin{bmatrix}1&-4\\6&0\end{bmatrix} - 2A-6B\rightarrow\begin{bmatrix}-4&2\\6&-2\end{bmatrix}
@@ -101,11 +98,11 @@ A = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-#### 5. Si $A = \begin{pmatrix} 2 & k-1 \\ 6 & 3 \end{pmatrix}$ y $P(x) = x^3 + x^2 - 15kx$. Halle el valor de $k$, tal que $A$ sea un cero de $P(x)$
+##### 5. Si $A = \begin{pmatrix} 2 & k-1 \\ 6 & 3 \end{pmatrix}$ y $P(x) = x^3 + x^2 - 15kx$. Halle el valor de $k$, tal que $A$ sea un cero de $P(x)$
 
-### Tipos de Matrices
+#### Tipos de Matrices
 
-#### 6. Halle los valores de $a,b,c$ tal que la matriz $B = \begin{pmatrix}2&a-2b&2a+b+c\\3&5&a+b\\0&-2&7 \end{pmatrix}$ sea simétrica
+##### 6. Halle los valores de $a,b,c$ tal que la matriz $B = \begin{pmatrix}2&a-2b&2a+b+c\\3&5&a+b\\0&-2&7 \end{pmatrix}$ sea simétrica
 
 $$
  B^T = \begin{pmatrix}
@@ -133,9 +130,9 @@ $$
 
 $$
 
-#### 7. Proponga una matriz, para cada inciso, que cumpla con la propiedad que se indica
+##### 7. Proponga una matriz, para cada inciso, que cumpla con la propiedad que se indica
 
-##### A. Una matriz cuadrada $N$ se dice nilpotente si existe un número natural $k$ tal que $N^k = 0$
+###### A. Una matriz cuadrada $N$ se dice nilpotente si existe un número natural $k$ tal que $N^k = 0$
 
 $$
 N = \begin{bmatrix}
@@ -145,7 +142,7 @@ N = \begin{bmatrix}
 K = 2 \rightarrow N^K \rightarrow N^2 = 0
 $$
 
-##### B. El producto de dos matrices triangulares inferiores diferentes es una matriz triangular inferior
+###### B. El producto de dos matrices triangulares inferiores diferentes es una matriz triangular inferior
 
 $$
 A = \begin{bmatrix}
@@ -160,7 +157,7 @@ AB = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-##### C. Dos matrices triangulares superiores diferentes que conmutan
+###### C. Dos matrices triangulares superiores diferentes que conmutan
 
 $$
 A = \begin{bmatrix}
@@ -186,7 +183,7 @@ A\times B = B\times A \rightarrow \begin{bmatrix}
 \end{bmatrix}
 $$
 
-##### D. Una matriz idempotente y una matriz involutiva son aquellas tales que $A^2 = A$ y $A^2 = I$
+###### D. Una matriz idempotente y una matriz involutiva son aquellas tales que $A^2 = A$ y $A^2 = I$
 
 $$
 \text{
@@ -212,9 +209,9 @@ A^2 = A \\
 A^2 = I
 $$
 
-### Determinantes
+#### Determinantes
 
-#### 8. Calcule el determinante de $A = \begin{bmatrix} 3&-5\\-6&10\end{bmatrix}$, $B = \begin{bmatrix}4&5&6\\0&5&-2\\0&0&-3\end{bmatrix}$, y $C = \begin{bmatrix}6&-1&-5&-8\\6&3&0&0\\-7&4&3&10\\0&5&0&0\end{bmatrix}$
+##### 8. Calcule el determinante de $A = \begin{bmatrix} 3&-5\\-6&10\end{bmatrix}$, $B = \begin{bmatrix}4&5&6\\0&5&-2\\0&0&-3\end{bmatrix}$, y $C = \begin{bmatrix}6&-1&-5&-8\\6&3&0&0\\-7&4&3&10\\0&5&0&0\end{bmatrix}$
 
 $$
 |A| = (10)(3)-(-6)(-5) = 30-30 = 0;
@@ -228,7 +225,7 @@ $$
 |C| = (-1)^{1+1}6\begin{vmatrix}3&0&0\\4&3&10\\5&0&0\end{vmatrix} + (-1)^{2+1}6\begin{vmatrix}-1&-5&-8\\4&3&10\\5&0&\end{vmatrix}+ (-1)^{3+1}(-7)\begin{vmatrix}-1&-5&-8\\3&0&0\\5&0&0\end{vmatrix} \\ = 18 \begin{vmatrix}3&10\\6&0\end{vmatrix} + (-24)\begin{vmatrix}0&0\\0&0\end{vmatrix} + 30\begin{vmatrix}0&0\\3&10\end{vmatrix} + 6\begin{vmatrix}3&10\\0&0\end{vmatrix} + 24\begin{vmatrix}-5&-8\\0&0\end{vmatrix} \\+(-30)\begin{vmatrix}-5&-8\\3&10\end{vmatrix}+7\begin{vmatrix}0&0\\0&0\end{vmatrix}+21\begin{vmatrix}-5&-8\\0&0\end{vmatrix}+(-35)\begin{vmatrix}-5&-8\\0&0\end{vmatrix} \\ = 780
 $$
 
-#### 9. Calcule el valor de $x$ para que el valor del determinante sea $-217$.
+##### 9. Calcule el valor de $x$ para que el valor del determinante sea $-217$.
 
 $$
 A = \begin{pmatrix}
@@ -242,81 +239,81 @@ $$
 |A| \rightarrow -217 = -28 - 36 + 30x - (-48) - (-6x) - (105) \rightarrow 24x - 217 = -217 \rightarrow 24x = 0 \\\therefore\\ x = 0;
 $$
 
-#### 10. Calcule el determinante de las siguientes matrices usando las propiedades:
+##### 10. Calcule el determinante de las siguientes matrices usando las propiedades:
 
-##### A. $\begin{bmatrix}4 & -2 \\ -12 & 6\end{bmatrix}$
+###### A. $\begin{bmatrix}4 & -2 \\ -12 & 6\end{bmatrix}$
 
 $$
 |A| = (4\times6) - (-12\times -2) = 24-24 = 0
 $$
 
-##### B. $\begin{bmatrix}7 & 9& 0\\-2&3&0\\4&5&0\end{bmatrix}$
+###### B. $\begin{bmatrix}7 & 9& 0\\-2&3&0\\4&5&0\end{bmatrix}$
 
 $$
 |B| = 0 \because \text{Una columna es 0}
 $$
 
-##### C. $\begin{bmatrix}2&3&-3\\-2&3&0\\4&5&0\end{bmatrix}$
+###### C. $\begin{bmatrix}2&3&-3\\-2&3&0\\4&5&0\end{bmatrix}$
 
 $$
 |C| = (2\times1\times-9) + (3\times6\times6) + (-3\times-4\times2) - (6\times1\times-3) - (2\times6\times2) - (-9\times-4\times3) = 0
 $$
 
-##### D. $\begin{bmatrix}1&0&0&0\\3&-1&0&0\\2&5&2&0\\2&1&1&4\end{bmatrix}$
+###### D. $\begin{bmatrix}1&0&0&0\\3&-1&0&0\\2&5&2&0\\2&1&1&4\end{bmatrix}$
 
 $$
 |D| = 1\times-1\times2\times4 = -8 \because \text{Al ser triangular inferior, es la multiplicación de su diagonal}
 $$
 
-#### 11. Sabiendo que $A$ y $B$ son matrices de tamaño $3\times3$ y que $|A| = 3$ y $|B| = -2$, calcule los siguientes determinantes
+##### 11. Sabiendo que $A$ y $B$ son matrices de tamaño $3\times3$ y que $|A| = 3$ y $|B| = -2$, calcule los siguientes determinantes
 
-##### A. $|AB|$
+###### A. $|AB|$
 
 $$
 |AB| = |A||B| = -6
 $$
 
-##### B. $|AA^T|$
+###### B. $|AA^T|$
 
 $$
 |A^T| = |A| \therefore |AA^T| = |A|^2 = 9
 $$
 
-##### C. $|A^TB|$
+###### C. $|A^TB|$
 
 $$
 |A^T| = |A| \therefore |A^TB| = |AB| = -6
 $$
 
-##### D. $|3A^2B|$
+###### D. $|3A^2B|$
 
 $$
 |A^n| = |A|^n \therefore |3A^2B| = 3|A^2B| = -54
 $$
 
-##### E. $|2AB^{-1}|$
+###### E. $|2AB^{-1}|$
 
 $$
 |B^{-1}| = |B|^{-1} \therefore |2AB^{-1}| = \frac{|2A|}{|B|} = -3
 $$
 
-##### F. $|(A^2B^{-1})^T|$
+###### F. $|(A^2B^{-1})^T|$
 
 $$
 \frac{9}{2}
 $$
 
-#### 12. Sean $A$ y $B$ dos matrices de tamaño $2\times2$. Si $|B| = 8$ y $|4A^2B^{-1}| = 50$, use las propiedades de los determinantes para encontrar el valor de $|A|$.
+##### 12. Sean $A$ y $B$ dos matrices de tamaño $2\times2$. Si $|B| = 8$ y $|4A^2B^{-1}| = 50$, use las propiedades de los determinantes para encontrar el valor de $|A|$.
 
 $$
 |4A^2B^{-1}| = 50 \rightarrow 16|A||A||B^{-1}| = 50 \rightarrow 2|A^2| = 50 \rightarrow |A^2| = 25 \rightarrow |A| = 5
 $$
 
-### Inversa de una matriz
+#### Inversa de una matriz
 
-#### 13. Determine para que valores de $a$ las siguientes matrices son regulares:
+##### 13. Determine para que valores de $a$ las siguientes matrices son regulares:
 
-##### $A = \begin{pmatrix}-a & a-1 & a + 1 \\ 1 + 2 +3 \\2-a & a+3 & a+7\end{pmatrix}$
+###### $A = \begin{pmatrix}-a & a-1 & a + 1 \\ 1 + 2 +3 \\2-a & a+3 & a+7\end{pmatrix}$
 
 $$
 |A| = 28+a \therefore a = -28
@@ -330,7 +327,7 @@ $$
 \end{vmatrix} = -4760
 $$
 
-##### $B = \begin{pmatrix}a+3 & 2a & a+3 \\ 0& 2&a\\0&0&a-4\end{pmatrix}$
+###### $B = \begin{pmatrix}a+3 & 2a & a+3 \\ 0& 2&a\\0&0&a-4\end{pmatrix}$
 
 $$
 |B| = 2a^2 - 2a - 24 \therefore a = \begin{cases}
@@ -353,7 +350,7 @@ $$
 \end{vmatrix} = 0 = \text{No regular}
 $$
 
-#### 14. Determine el valor de $x$ para que la matriz $A = \begin{pmatrix}x+2 & 2 \\1 & x+1\end{pmatrix}$ sea singular.
+##### 14. Determine el valor de $x$ para que la matriz $A = \begin{pmatrix}x+2 & 2 \\1 & x+1\end{pmatrix}$ sea singular.
 
 $$
 |A| = x^2+3x = \begin{cases}
@@ -374,9 +371,9 @@ $$
 \end{vmatrix} = 0 = \text{Singular}
 $$
 
-#### 15. Encuentre a la adjunta de cada una de las siguientes matrices. Use a la adjunta para determinar la inversa de las matrices, si es posible.
+##### 15. Encuentre a la adjunta de cada una de las siguientes matrices. Use a la adjunta para determinar la inversa de las matrices, si es posible.
 
-##### $A = \begin{pmatrix}2&-3\\-1&2\end{pmatrix}$
+###### $A = \begin{pmatrix}2&-3\\-1&2\end{pmatrix}$
 
 $$
 Adj(A) = A^T \times -1 \text{ En su diagonal} = \begin{bmatrix}
@@ -392,13 +389,13 @@ A^{-1} = \frac{1}{1}\begin{bmatrix}
 \end{bmatrix}
 $$
 
-##### $B = \begin{pmatrix}1&-3&4\\2&-5&7\\0&-1&1\end{pmatrix}$
+###### $B = \begin{pmatrix}1&-3&4\\2&-5&7\\0&-1&1\end{pmatrix}$
 
 $$
 |B| = 0 \therefore \text{Es imposible sacar su inversa}
 $$
 
-##### $C = \begin{pmatrix}1&0&2\\2&-1&3\\4&1&8\end{pmatrix}$
+###### $C = \begin{pmatrix}1&0&2\\2&-1&3\\4&1&8\end{pmatrix}$
 
 $$
 |C| = 1
@@ -418,9 +415,9 @@ C^{-1} = \frac{1}{1}\begin{bmatrix}
 \end{bmatrix}
 $$
 
-#### 16. Sabiendo que $AAB = I$ si $B = A^{-1}$, use este teorema para hallar lo que se pide:
+##### 16. Sabiendo que $AAB = I$ si $B = A^{-1}$, use este teorema para hallar lo que se pide:
 
-##### A. Sea $A = \begin{pmatrix}1&1\\-1&1\end{pmatrix}$, encuentre, si es posible, a la matriz $B$.
+###### A. Sea $A = \begin{pmatrix}1&1\\-1&1\end{pmatrix}$, encuentre, si es posible, a la matriz $B$.
 
 $$
 |A| = 2 \therefore A^{-1} = \frac{1}{2}\begin{bmatrix}
@@ -431,7 +428,7 @@ $$
 \end{bmatrix} = B
 $$
 
-##### B. Muestre que la matriz $A = \begin{pmatrix}3&4\\-2&-3\end{pmatrix}$ es su propia inversa.
+###### B. Muestre que la matriz $A = \begin{pmatrix}3&4\\-2&-3\end{pmatrix}$ es su propia inversa.
 
 $$
 |A| = -1
@@ -441,7 +438,7 @@ $$
 A^{-1} = -\frac{1}{1}\begin{pmatrix}3&-4\\2&-3\end{pmatrix} = \begin{pmatrix}3&4\\-2&-3\end{pmatrix}
 $$
 
-#### 17. Encuentre una matriz $A$, de tal manera que se cumpla la siguiente condición: $A\begin{pmatrix}2&3\\1&2\end{pmatrix} = \begin{pmatrix}\frac{3}{4} & 0 \\ 0 & \frac{3}{4}\end{pmatrix}$.
+##### 17. Encuentre una matriz $A$, de tal manera que se cumpla la siguiente condición: $A\begin{pmatrix}2&3\\1&2\end{pmatrix} = \begin{pmatrix}\frac{3}{4} & 0 \\ 0 & \frac{3}{4}\end{pmatrix}$.
 
 $$
 B = \begin{bmatrix}
@@ -463,7 +460,7 @@ B^{-1} = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-#### 18. Si $A = \begin{pmatrix} \frac{1}{3} & -\frac{1}{4} & -\frac{1}{6} \\ 0 & \frac{1}{4} & \frac{1}{2} \\ 0 & \frac{1}{4} & -\frac{1}{2}\end{pmatrix}$, halle a la matriz $B$, tal que $AB = \begin{pmatrix}2&-1&0\\4&5&-3\\1&9&7\end{pmatrix}$.
+##### 18. Si $A = \begin{pmatrix} \frac{1}{3} & -\frac{1}{4} & -\frac{1}{6} \\ 0 & \frac{1}{4} & \frac{1}{2} \\ 0 & \frac{1}{4} & -\frac{1}{2}\end{pmatrix}$, halle a la matriz $B$, tal que $AB = \begin{pmatrix}2&-1&0\\4&5&-3\\1&9&7\end{pmatrix}$.
 
 $$
 B = A^{-1}(AB)
@@ -483,25 +480,25 @@ B = A^{-1}(AB) = \begin{pmatrix}
 \end{pmatrix}
 $$
 
-### Reducción de matrices y sistemas de ecuaciones lineales
+#### Reducción de matrices y sistemas de ecuaciones lineales
 
-#### 19. Las siguientes matrices aumentadas se encuentran parcialmente reducidas. Sin hacer cálculos, argumente el tipo de solución que tienen los sistemas de ecuaciones que representan a tales matrices.
+##### 19. Las siguientes matrices aumentadas se encuentran parcialmente reducidas. Sin hacer cálculos, argumente el tipo de solución que tienen los sistemas de ecuaciones que representan a tales matrices.
 
-##### A. $\left(\begin{array}{rrr|r}1&2&0&4\\0&2&-1&3\\0&4&-2&6\end{array}\right)$
+###### A. $\left(\begin{array}{rrr|r}1&2&0&4\\0&2&-1&3\\0&4&-2&6\end{array}\right)$
 
 El sistema es consistente con soluciones infinitas, esto se debe a que sus ecuaciones son linealmente dependientes.
 
-##### B. $\left(\begin{array}{rrrr|r}1&2&3&4&5\\2&4&6&8&9\end{array}\right)$
+###### B. $\left(\begin{array}{rrrr|r}1&2&3&4&5\\2&4&6&8&9\end{array}\right)$
 
 El sistema es consistente con soluciones infinitas, esto se debe a que sus ecuaciones son inconsistentes.
 
-##### C. $\left(\begin{array}{rrr|r}1&2&-1&3\\0&4&1&2\\0&4&1&2\\0&0&2&5\end{array}\right)$
+###### C. $\left(\begin{array}{rrr|r}1&2&-1&3\\0&4&1&2\\0&4&1&2\\0&0&2&5\end{array}\right)$
 
 El sistema es consistente con soluciones infinitas, esto se debe a que sus ecuaciones son linealmente dependientes.
 
-#### 20. Resuelva los siguientes sistemas lineales con Gauss-Jordan
+##### 20. Resuelva los siguientes sistemas lineales con Gauss-Jordan
 
-##### A.
+###### A.
 
 $$
 \begin{align*}x-2y+3x=2\\x-3y+6z=6\\3x-7x+12z=2
@@ -571,7 +568,7 @@ $$
 
 El sistema no tiene solución.
 
-##### B.
+###### B.
 
 $$
 \begin{align*}
@@ -671,7 +668,7 @@ x+y+2x=7\\
 \end{align*}
 $$
 
-##### C.
+###### C.
 
 $$
 \left[
@@ -735,9 +732,9 @@ $$
 
 El sistema es consistente con infinitas soluciones
 
-#### 21. Determine el valor de $K$ para cada uno de los siguientes sistemas de ecuaciones: Solución única, infinitas o sin solución.
+##### 21. Determine el valor de $K$ para cada uno de los siguientes sistemas de ecuaciones: Solución única, infinitas o sin solución.
 
-##### A.
+###### A.
 
 $$
 \begin{align*}
@@ -807,7 +804,7 @@ $$
 
 $$
 
-##### B.
+###### B.
 
 $$
 \begin{align*}
@@ -908,7 +905,7 @@ $$
 
 Cuenta con soluciones infinitas cuando $K=10$
 
-##### C.
+###### C.
 
 $$
 \begin{align*}
@@ -960,9 +957,9 @@ $$
 No tiene solución cuando $k=3$
 [(1 + 1/2) −(2 + 1/4); (−3/4) (1 + 1/2)]
 
-#### 22. Encuentre el valor de la o las incógnitas que se indican a continuación, bajo las condiciones de los sistemas dados.
+##### 22. Encuentre el valor de la o las incógnitas que se indican a continuación, bajo las condiciones de los sistemas dados.
 
-##### B. halle los valores de $a$, $b$ y $c$ de modo que el sistema tenga solución trivial $(x,y,z) = (1,-1,2)$.
+###### B. halle los valores de $a$, $b$ y $c$ de modo que el sistema tenga solución trivial $(x,y,z) = (1,-1,2)$.
 
 $$
 \left[
@@ -1005,13 +1002,13 @@ A^{-1}B = \begin{bmatrix}
 \end{bmatrix} \therefore a = 2, b = -1, c = 1
 $$
 
-##### C. halle los valores de $a$, $b$ y $c$ de modo que el sistema sea consistente.
+###### C. halle los valores de $a$, $b$ y $c$ de modo que el sistema sea consistente.
 
-#### 23. Sean los sistemas $S_1 \begin{cases}x_1+6x_2+3X_3=4\\-x_1+x_2=-3\\1x_1+x_2=5\end{cases}$ y $S_2 = \begin{cases}x_1 + 6x_2 + 3x_3=-3\\-x_1+x_2=2\\7x_2+3x_3=8\end{cases}$. Para cada uno de estos sistemas, resuelva
+##### 23. Sean los sistemas $S_1 \begin{cases}x_1+6x_2+3X_3=4\\-x_1+x_2=-3\\1x_1+x_2=5\end{cases}$ y $S_2 = \begin{cases}x_1 + 6x_2 + 3x_3=-3\\-x_1+x_2=2\\7x_2+3x_3=8\end{cases}$. Para cada uno de estos sistemas, resuelva
 
-##### A. Un sistema de ecuaciones lineales se representa por $Ax = b$, resuelva el sistema dador con $x = A^{-1}b$
+###### A. Un sistema de ecuaciones lineales se representa por $Ax = b$, resuelva el sistema dador con $x = A^{-1}b$
 
-##### B. Resuelva el sistema con la Regla de Cramer.
+###### B. Resuelva el sistema con la Regla de Cramer.
 
 $$
 \begin{bmatrix}
@@ -1054,9 +1051,9 @@ adj(A) = \begin{bmatrix}
 \end{bmatrix}
 $$
 
-#### 24. Resuelva los sistemas no lineales:
+##### 24. Resuelva los sistemas no lineales:
 
-##### A.
+###### A.
 
 $$
 \begin{align*}
@@ -1119,7 +1116,7 @@ y = \sqrt{1}
 
 $$
 
-##### B.
+###### B.
 
 $$
 \begin{align*}
@@ -1179,7 +1176,7 @@ $$
 3b = 2
 $$
 
-##### C.
+###### C.
 
 $$
 \begin{align*}
@@ -1239,9 +1236,9 @@ $$
 \sin{\theta} = \frac{1}{2}
 $$
 
-### Aplicaciones
+#### Aplicaciones
 
-#### 25. La función $f(x) = \frac{3x}{2x^2+x-1}$, se descompone en fracciones más simples de la siguiente manera: $f(x) = \frac{A}{x+1} + \frac{B}{2x-1}$. Determine los valores de $A$ y $B$.
+##### 25. La función $f(x) = \frac{3x}{2x^2+x-1}$, se descompone en fracciones más simples de la siguiente manera: $f(x) = \frac{A}{x+1} + \frac{B}{2x-1}$. Determine los valores de $A$ y $B$.
 
 $$
 \text{Factorizamos } 2x^2+x-1
@@ -1296,7 +1293,7 @@ A = 1\\
 B = 1
 $$
 
-#### 26. Un automóvil se mueve a partir de cierta velocidad $v$ con una aceleración constante a partir de determinado punto $d$. Si se toma la distancia que avanza en tiempos de &1&,&2& y &3& segundos, las cuales son &14&, &37& y &72& metros respectivamente. Obtener la aceleración, la velocidad inicial y el punto en el que empieza.
+##### 26. Un automóvil se mueve a partir de cierta velocidad $v$ con una aceleración constante a partir de determinado punto $d$. Si se toma la distancia que avanza en tiempos de &1&,&2& y &3& segundos, las cuales son &14&, &37& y &72& metros respectivamente. Obtener la aceleración, la velocidad inicial y el punto en el que empieza.
 
 $$
 x = V_0t + \frac{1}{2}at^2 \rightarrow
@@ -1359,7 +1356,7 @@ $$
 \text{Punto en el que empieza: 3} m
 $$
 
-#### 27. Una fábrica produce tres tipos de herramientas: $A$, $B$ y $C$. En la fábrica trabajan tres obreros durante $8$ horas diarias cada uno, y un revisor para comprobar las herramientas durante $1$ hora diaria. Para fabricar una herramienta de tipo $A$ se emplean dos horas de mano de obra y se necesitan $6$ minutos de revisión, para la fabricación de una de tipo $B$ se emplean $4$ horas de mano de obra y $4$ minutos de revisión y para una de tipo $C$ se necesitan $1$ hora de mano de obra y $4$ minutos de revisión. Por limitaciones en la producción, se deben producir exactamente $12$ herramientas al día. Calcule el número de herramientas de cada tipo que se elaboran cada día en la fábrica.
+##### 27. Una fábrica produce tres tipos de herramientas: $A$, $B$ y $C$. En la fábrica trabajan tres obreros durante $8$ horas diarias cada uno, y un revisor para comprobar las herramientas durante $1$ hora diaria. Para fabricar una herramienta de tipo $A$ se emplean dos horas de mano de obra y se necesitan $6$ minutos de revisión, para la fabricación de una de tipo $B$ se emplean $4$ horas de mano de obra y $4$ minutos de revisión y para una de tipo $C$ se necesitan $1$ hora de mano de obra y $4$ minutos de revisión. Por limitaciones en la producción, se deben producir exactamente $12$ herramientas al día. Calcule el número de herramientas de cada tipo que se elaboran cada día en la fábrica.
 
 $$
 x = \text{Número de herramientas de tipo } A. \\
@@ -1492,7 +1489,7 @@ y = 2.002\\
 z = 4.004
 $$
 
-#### 28. Una empresa otorga $\$2,720,000$ pesos para becar a $100$ estudiantes que son hijos de sus empleados. Establezca tres cantidades diferentes en función a los niveles educativos de los jóvenes ($A$, $B$ y $C$); $\$40,000$ pesos para los del nivel $A$, $\$16,000$ pesos para los del $B$ y $\$20,000$ pesos para los del $C$. Si para el nivel $A$ destina cinco veces más de dinero que para el $B$, ¿cuántos estudiantes hay en cada nivel?
+##### 28. Una empresa otorga $\$2,720,000$ pesos para becar a $100$ estudiantes que son hijos de sus empleados. Establezca tres cantidades diferentes en función a los niveles educativos de los jóvenes ($A$, $B$ y $C$); $\$40,000$ pesos para los del nivel $A$, $\$16,000$ pesos para los del $B$ y $\$20,000$ pesos para los del $C$. Si para el nivel $A$ destina cinco veces más de dinero que para el $B$, ¿cuántos estudiantes hay en cada nivel?
 
 $$
 x = \text{Número de estudiantes de nivel } A \\
@@ -1588,7 +1585,7 @@ y = 20\\
 z = 40
 $$
 
-#### 29. Se planea balancear una comida para que ésta proporcione las cantidades adecuadas de vitamina $C$, magnesio y calcio. Para cumplir el objetivo se emplearán tres tipos de alimentos medidos en mg (miligramos). La relación de nutrientes proporcionados por cada alimento se muestra en la tabla. Determine la cantidad de mg de cada nutriente necesaria para cumplir con el balanceo de una comida.
+##### 29. Se planea balancear una comida para que ésta proporcione las cantidades adecuadas de vitamina $C$, magnesio y calcio. Para cumplir el objetivo se emplearán tres tipos de alimentos medidos en mg (miligramos). La relación de nutrientes proporcionados por cada alimento se muestra en la tabla. Determine la cantidad de mg de cada nutriente necesaria para cumplir con el balanceo de una comida.
 
 | Nutrientes | Alimento 1 | Alimento 2 | Alimento 3 | Total de nutrientes requeridos |
 | ---------- | ---------- | ---------- | ---------- | ------------------------------ |
@@ -1699,7 +1696,7 @@ $$
 
 $$
 
-#### 30. Un autobús transporta en hora pico a $80$ viajeros de tres tipos: viajeros que pagan el pasaje completo, el cual tiene un costo de $7$5 pesos; viajeros con un $20%$ de descuento y estudiantes con un 40% de descuento. El monto colectado por el autobús en ese viaje fue de $3975$ pesos. Calcule el número de viajeros de cada clase sabiendo que el número de estudiantes era el triple que el número del resto de viajeros.
+##### 30. Un autobús transporta en hora pico a $80$ viajeros de tres tipos: viajeros que pagan el pasaje completo, el cual tiene un costo de $7$5 pesos; viajeros con un $20%$ de descuento y estudiantes con un 40% de descuento. El monto colectado por el autobús en ese viaje fue de $3975$ pesos. Calcule el número de viajeros de cada clase sabiendo que el número de estudiantes era el triple que el número del resto de viajeros.
 
 $$
 \begin{align*}
@@ -1793,7 +1790,7 @@ $$
 
 $$
 
-#### 31. Se va a construir un gran edificio de departamentos. La distribución de los departamentos en cualquier piso dado se elige entre tres diseños de piso básicos. Cada piso del diseño $A$ incluye $3$ unidades de tres dormitorios, $7$ con dos dormitorios, y $8$ con un dormitorio. Cada piso del diseño $B$ incluye $4$ unidades con tres dormitorios, $4$ con dos dormitorios, y $8$ con un dormitorio. Cada piso del diseño $C$ incluye $5$ unidades con tres dormitorios, $3$ con dos dormitorios, y $9$ con un dormitorio. ¿Es posible diseñar el edificio de tal forma que tenga exactamente $66$ unidades con tres dormitorios, $74$ unidades con dos dormitorios, y $136$ unidades con un dormitorio? Si la respuesta es afirmativa, proponga una distribución de pisos de cada diseño.
+##### 31. Se va a construir un gran edificio de departamentos. La distribución de los departamentos en cualquier piso dado se elige entre tres diseños de piso básicos. Cada piso del diseño $A$ incluye $3$ unidades de tres dormitorios, $7$ con dos dormitorios, y $8$ con un dormitorio. Cada piso del diseño $B$ incluye $4$ unidades con tres dormitorios, $4$ con dos dormitorios, y $8$ con un dormitorio. Cada piso del diseño $C$ incluye $5$ unidades con tres dormitorios, $3$ con dos dormitorios, y $9$ con un dormitorio. ¿Es posible diseñar el edificio de tal forma que tenga exactamente $66$ unidades con tres dormitorios, $74$ unidades con dos dormitorios, y $136$ unidades con un dormitorio? Si la respuesta es afirmativa, proponga una distribución de pisos de cada diseño.
 
 $$
 x = \text{número de pisos con el diseño } A.
@@ -1868,7 +1865,7 @@ $$
 \end{align*}
 $$
 
-#### 32. Encuentre el patrón de tráfico general en la red de calles principales que se muestra en la figura. (Las tasas de flujo se dan en automóviles por minuto). ¿Cuál es el valor mínimo de $x_1$?
+##### 32. Encuentre el patrón de tráfico general en la red de calles principales que se muestra en la figura. (Las tasas de flujo se dan en automóviles por minuto). ¿Cuál es el valor mínimo de $x_1$?
 
 ![Alt text](image.png)
 
@@ -1979,7 +1976,7 @@ $$
 
 Considerando la ecuación de $x_1$, el valor mínimo de $x_1$ es de $100$.
 
-#### 33. Use las leyes de Kirchhoff y la ley de Ohm para establecer un sistema de ecuaciones lineales que permita determinar las corrientes $I_1$, $I_2$, $I_3$ en la red eléctrica que se muestra en la siguiente figura.
+##### 33. Use las leyes de Kirchhoff y la ley de Ohm para establecer un sistema de ecuaciones lineales que permita determinar las corrientes $I_1$, $I_2$, $I_3$ en la red eléctrica que se muestra en la siguiente figura.
 
 ![Alt text](image-1.png)
 
@@ -2000,7 +1997,7 @@ I_2 = 13 - 4I_3\\
 I_3 \in \R
 $$
 
-#### 34. Considere la siguiente reacción química. Para cada uno de los dos reactivos de la izquierda y los cuatro productos de la derecha, construya un vector en ℝ5 que liste el número de átomos por molécula de plomo (Pb), nitrógeno (N), cromo (Cr), manganeso (Mn) y oxígeno (O). Escriba una ecuación vectorial, que los coeficientes desconocidos de la reacción deban satisfacer, y encuentre una solución que tenga sentido en el balance.
+##### 34. Considere la siguiente reacción química. Para cada uno de los dos reactivos de la izquierda y los cuatro productos de la derecha, construya un vector en ℝ5 que liste el número de átomos por molécula de plomo (Pb), nitrógeno (N), cromo (Cr), manganeso (Mn) y oxígeno (O). Escriba una ecuación vectorial, que los coeficientes desconocidos de la reacción deban satisfacer, y encuentre una solución que tenga sentido en el balance.
 
 $$
 PbN_6 + CrMn_2O_8 \rightarrow Pb_3O_4 + Cr_2O_3 + MnO_2 + NO

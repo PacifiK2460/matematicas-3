@@ -2156,49 +2156,123 @@ combinación lineal del conjunto de vectores A.</li>
   \]</span></p>
 <ol start="2" style="list-style-type: lower-alpha">
 <li><span class="math inline">\(B = -x^2+2x, A = \{x^2-1, x^2+1,
-x^2-x-1, x^2+5x\}\)</span>: No se puede <span class="math inline">\(\because\)</span> <span class="math inline">\(r
-&gt; m\)</span></li>
+x^2-x-1, x^2+5x\}\)</span>:</li>
 </ol>
+<p><span class="math display">\[
+  \begin{bmatrix} 1 &amp; 1 &amp;1 &amp;1 &amp; -1 \\ 0 &amp; 0&amp; -1
+&amp; 5 &amp; 2 \\ -1 &amp; 1 &amp;-1 &amp; -1 &amp; 0 \end{bmatrix}
+\underrightarrow{R_3 \rightarrow R_1 + R_3} \begin{bmatrix}1 &amp;
+1&amp;1&amp;1&amp;-1\\0&amp;0&amp;-1&amp;5&amp;2\\0&amp;2&amp;0&amp;0&amp;-1\end{bmatrix}
+\underrightarrow{R_2 \leftrightarrow R_3}  \\
+\begin{bmatrix}1&amp;0&amp;1&amp;1&amp;-\frac{1}{2} \\ 0 &amp;
+1&amp;0&amp;0&amp;-\frac{1}{2} \\ 0 &amp;
+0&amp;-1&amp;5&amp;2\end{bmatrix} \underrightarrow{-R_3}
+\begin{bmatrix}1&amp;0&amp;1&amp;1&amp;-\frac{1}{2}\\0&amp;1&amp;0&amp;0&amp;-\frac{1}{2}\\0&amp;0&amp;1&amp;5&amp;-2\end{bmatrix}
+\rightarrow{R_1 \rightarrow -R_3 + R_1} \\
+\begin{bmatrix}1&amp;0&amp;0&amp;6&amp;\frac{3}{2} \\
+0&amp;1&amp;0&amp;0&amp;-\frac{1}{2}\\0&amp;0&amp;1&amp;5&amp;-2\end{bmatrix}
+\therefore c_1 =  \frac{3}{2}, c_2 = -\frac{1}{2}, c_3 = -2, c_4 = 0
+  \]</span></p>
 </div>
 <div id="vectores-linealmente-independientes-y-dependientes" class="section level2">
 <h2>Vectores Linealmente Independientes y Dependientes</h2>
 <ol style="list-style-type: decimal">
-<li><p>Determine los valores de <span class="math inline">\(k\)</span>
-para que el conjunto <span class="math inline">\(H = \{\begin{pmatrix}k
-\\ -2 \\3 \end{pmatrix}, \begin{pmatrix}2 \\ -2k \\ -1\end{pmatrix},
+<li>Determine los valores de <span class="math inline">\(k\)</span> para
+que el conjunto <span class="math inline">\(H = \{\begin{pmatrix}k \\ -2
+\\3 \end{pmatrix}, \begin{pmatrix}2 \\ -2k \\ -1\end{pmatrix},
 \begin{pmatrix}k \\ 0 \\3\end{pmatrix}\}\)</span> sea lineal-mente
-independiente.</p></li>
-<li><p>Sea <span class="math inline">\(V\)</span> el espacio vectorial
-de todas las funciones con valore real definidas sobre la recta real
-completa. ¿Cuáles de los siguientes conjuntos de vectores en <span class="math inline">\(V\)</span> son lineal-mente dependientes?</p></li>
+independiente.</li>
+</ol>
+<p><span class="math display">\[
+  A =
+\begin{bmatrix}k&amp;2&amp;k\\-2&amp;-2k&amp;0\\3&amp;-1&amp;3\end{bmatrix}
+  \]</span></p>
+<p><span class="math display">\[
+  |A| \rightarrow -6k^2+2k-(-6k^2-12)
+\rightarrow6k^2+2k+6k^2-12\rightarrow 2k+12 \therefore K = -6
+  \]</span></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Sea <span class="math inline">\(V\)</span> el espacio vectorial de
+todas las funciones con valore real definidas sobre la recta real
+completa. ¿Cuáles de los siguientes conjuntos de vectores en <span class="math inline">\(V\)</span> son lineal-mente dependientes?</li>
 </ol>
 <ol style="list-style-type: lower-alpha">
-<li><p><span class="math inline">\(\{2,4\sin^2{x},\cos^2{x}\}\)</span></p></li>
+<li><p><span class="math inline">\(\{2,4\sin^2{x},\cos^2{x}\}\)</span>
+Nos da un sistema incosistente, por lo tanto es linealmente
+dependiente.</p></li>
 <li><p><span class="math inline">\(\{x, \cos{x}\}\)</span></p></li>
-<li><p><span class="math inline">\(\{1,\sin{x},\sin{2x}\}\)</span></p></li>
-<li><p><span class="math inline">\(\{\cos{2x}, \sin^2{x},
-\cos^2{x}\}\)</span></p></li>
+</ol>
+<p><span class="math display">\[
+  \begin{bmatrix}x &amp; \cos{x} &amp; 0  \\ 1 &amp; -\sin{x} &amp;
+0\end{bmatrix} \underrightarrow{R_1 \leftrightarrow R_2}
+\begin{bmatrix}1 &amp; -\sin{x} &amp; 0 \\ x &amp; \cos{x} &amp;
+0\end{bmatrix} \underrightarrow{-xR_1 + R_2}
+\begin{bmatrix}1&amp;\sin{x}&amp;0 \\ 0 &amp; \cos{x}
++x\sin{x}&amp;0\end{bmatrix}\ \underrightarrow{\frac{1}{\cos{x} +
+x\sin{x}}}R_2 \\ \begin{bmatrix}1 &amp; -\sin{x} &amp; 0\\
+0&amp;1&amp;0\end{bmatrix} \underrightarrow{\sin{x}R_2 + R_1}
+\begin{bmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\end{bmatrix} \therefore C_1
+= C_2 = 0 \therefore \text{ Solución consistente, por lo tanto es
+linealmente independiente.}
+  \]</span></p>
+<ol start="3" style="list-style-type: lower-alpha">
+<li><span class="math inline">\(\{1,\sin{x},\sin{2x}\}\)</span></li>
+</ol>
+<p><span class="math display">\[
+  \begin{bmatrix}0\\0\\0\end{bmatrix} \rightarrow
+\begin{bmatrix}1\\\sin{x}\\\sin{2x}\end{bmatrix} \therefore
+\begin{bmatrix}1&amp;\sin{x}&amp;\sin{2x} &amp;0\\ 0 &amp; \cos{x} &amp;
+2\cos{2x} &amp; 0 \\ 0 &amp; -\sin{x} &amp;
+-4\sin{2x}&amp;0\end{bmatrix} \underrightarrow{\frac{1}{\cos{x}}R_2}
+\begin{bmatrix}1 &amp; \sin{x} &amp; \sin{2x} &amp; 0 \\
+0&amp;1&amp;2\frac{\cos{2x}}{\cos{x}}&amp;0\\0&amp;-\sin{x}&amp;-4\sin{2x}\end{bmatrix}
+\underrightarrow{-\sin{x}R_2 + R_1 \\ \sin{x}R-2 + R_3} \\ \dots \\
+\begin{bmatrix}1&amp;0&amp;0&amp;0\\0&amp;1&amp;0&amp;0\\0&amp;0&amp;1&amp;0\end{bmatrix}
+\therefore \text{Solución consistente donde } c_1 = c_2 = c_3 = 0 \text{
+Por lo tanto es linealmente independiente}
+  \]</span></p>
+<ol start="4" style="list-style-type: lower-alpha">
+<li><span class="math inline">\(\{\cos{2x}, \sin^2{x},
+\cos^2{x}\}\)</span> El sistema es linealmente independiente por ser un
+sistema consistente con soluciones infinitas.</li>
 </ol>
 <ol start="3" style="list-style-type: decimal">
 <li>Para que los valores de <span class="math inline">\(k\)</span>, las
-siguientes matrices son linealmente independientes de <span class="math inline">\(M_  {22}\)</span></li>
+siguientes matrices son linealmente independientes de <span class="math inline">\(M_  {22}\)</span> <span class="math inline">\(\begin{bmatrix}1 &amp; 0\\ 1 &amp; k\end{bmatrix},
+\begin{bmatrix}-1 &amp; 0 \\ k &amp; 1\end{bmatrix}, \begin{bmatrix}2
+&amp; 0 \\ 1 &amp; 3\end{bmatrix}\)</span></li>
 </ol>
-<ol style="list-style-type: lower-alpha">
-<li><p><span class="math inline">\(\begin{bmatrix}1 &amp; 0\\ 1 &amp;
-k\end{bmatrix}\)</span></p></li>
-<li><p><span class="math inline">\(\begin{bmatrix}-1 &amp; 0 \\ k &amp;
-1\end{bmatrix}\)</span></p></li>
-<li><p><span class="math inline">\(\begin{bmatrix}2 &amp; 0 \\ 1 &amp;
-3\end{bmatrix}\)</span></p></li>
-</ol>
+<p><span class="math display">\[
+  \begin{bmatrix}1&amp;-1&amp;2&amp;a\\0&amp;0&amp;0&amp;b\\1&amp;k&amp;1&amp;c\\k&amp;0&amp;3&amp;d\end{bmatrix}
+\therefore \text{}
+  \]</span></p>
 <ol start="4" style="list-style-type: decimal">
-<li><p>Construya un conjunto de vectores <span class="math inline">\(H =
+<li>Construya un conjunto de vectores <span class="math inline">\(H =
 \{v_1, v_2, v_3\} \in R^3\)</span> tal que sean linealmente
 independientes y <span class="math inline">\(v_1^TV_2 = v_2^Tv_3 =
-0\)</span>.</p></li>
-<li><p>Sea <span class="math inline">\(H = \{v_1, v_2, v_3\} \in
+0\)</span>.</li>
+</ol>
+<p><span class="math display">\[
+  V_1 = \begin{bmatrix}1\\0\\0\end{bmatrix} , V_2 =
+\begin{bmatrix}0\\1\\0\end{bmatrix}, V_3 =
+\begin{bmatrix}0\\0\\1\end{bmatrix}
+  \]</span></p>
+<p><span class="math display">\[
+  A =
+\begin{bmatrix}1&amp;0&amp;0\\0&amp;1&amp;0\\0&amp;0&amp;1\end{bmatrix}
+\therefore |A| = 0
+  \]</span></p>
+<p><span class="math display">\[
+  V_1^T V_2 = \begin{bmatrix}1&amp;0&amp;0\end{bmatrix}
+\begin{bmatrix}0\\1\\0\end{bmatrix} = 0 \\ V_2^TV_3 =
+\begin{bmatrix}0&amp;1&amp;0\end{bmatrix}
+\begin{bmatrix}0\\0\\1\end{bmatrix} = 0 \\ \therefore \\ V_1^TV_2 =
+V_2^TV_1 = 0
+  \]</span></p>
+<ol start="5" style="list-style-type: decimal">
+<li>Sea <span class="math inline">\(H = \{v_1, v_2, v_3\} \in
 R^3\)</span>. Demuestre que si <span class="math inline">\(det(H) = det(
-[v_1, v_2, v_3] ) = 0\)</span>, entonces <span class="math inline">\(H\)</span> es lineal-mente independiente.</p></li>
+[v_1, v_2, v_3] ) = 0\)</span>, entonces <span class="math inline">\(H\)</span> es lineal-mente independiente.</li>
 </ol>
 </div>
 <div id="bases-y-cambios-de-base" class="section level2">
@@ -2322,18 +2396,39 @@ los siguientes ejercicios:</li>
 <li><span class="math inline">\(p_3 = 2p_1 - p_2\)</span></li>
 </ol>
 <p><span class="math display">\[
-  2x^2 + 2x - 4 - 3x^2 - x = -x^2+x-4
+  2x^2 + 2x - 4 - 3x^2 - x = -x^2+3x-4
   \]</span> b) El conjunto <span class="math inline">\(\{p_1,p_2,p_3\}\)</span>, ¿forman una base?
 Justifica.</p>
+<p><span class="math display">\[
+  A = \begin{bmatrix}1 &amp; 1 &amp; -2 \\
+3&amp;-1&amp;0\\-1&amp;3&amp;-4\end{bmatrix} \therefore |A| = 0
+\therefore \text{ No es base y es linealmente dependiente}
+  \]</span></p>
 <ol start="4" style="list-style-type: decimal">
-<li><p>Dado el siguiente sistema de ecuaciones lineales homogéneo: <span class="math display">\[\begin{align*}-x+3y+z = 0 \\
+<li>Dado el siguiente sistema de ecuaciones lineales homogéneo: <span class="math display">\[\begin{align*}-x+3y+z = 0 \\
 2x+2y-z=0\\3x-y-2z=0\end{align*}\]</span> Determina la base(si es que
-existe) del conjunto solución del problema.</p></li>
-<li><p>Dados los vectores y bases siguientes: <span class="math display">\[V = \begin{pmatrix}-1\\3\end{pmatrix}, Z =
+existe) del conjunto solución del problema.</li>
+</ol>
+<p><span class="math display">\[
+  \begin{bmatrix}-1&amp;3&amp;1&amp;0\\2&amp;2&amp;-1&amp;0\\3&amp;-1&amp;-2&amp;0\end{bmatrix}
+\underrightarrow{-R1}\begin{bmatrix}1&amp;-3&amp;1&amp;0\\2&amp;2&amp;-1&amp;0\\3&amp;-1&amp;-2&amp;0\end{bmatrix}
+\underrightarrow{-2R_1 + R_2 \\ -3R_1 + R_3} \\
+\begin{bmatrix}1&amp;-3&amp;-1&amp;0\\0&amp;8&amp;1&amp;0\\0&amp;8&amp;1&amp;0\end{bmatrix}
+\underrightarrow{\frac{1}{8}R_2}\begin{bmatrix}1&amp;-3&amp;-1&amp;0\\0&amp;1&amp;\frac{1}{8}&amp;0\\0&amp;8&amp;1&amp;0\end{bmatrix}\underrightarrow{3R_2
++ R_1 \\ -8R_2 +R_3} \\\begin{bmatrix}1
+&amp;0&amp;-\frac{5}{6}&amp;0\\0&amp;1&amp;\frac{1}{8}&amp;0\\0&amp;0&amp;0&amp;0\end{bmatrix}
+\therefore x = \frac{5}{8}z, y = -\frac{1}{8}z, z\in R
+  \]</span></p>
+<p><span class="math display">\[
+  z\begin{bmatrix}\frac{5}{8} \\ -\frac{5}{8} \\1\end{bmatrix} = S \\
+dim(S) =1
+  \]</span></p>
+<ol start="5" style="list-style-type: decimal">
+<li>Dados los vectores y bases siguientes: <span class="math display">\[V = \begin{pmatrix}-1\\3\end{pmatrix}, Z =
 \left\{ \begin{bmatrix}-1\\-3\end{bmatrix},
 \begin{bmatrix}1\\0\end{bmatrix} \right\}, W = \left\{
 \begin{bmatrix}1\\-1\end{bmatrix}, \begin{bmatrix}0\\1\end{bmatrix}
-\right\}\]</span></p></li>
+\right\}\]</span></li>
 </ol>
 <ol style="list-style-type: lower-alpha">
 <li>Calcula <span class="math inline">\([V]_W\)</span>.</li>
@@ -2403,11 +2498,92 @@ matriz de transición del inciso anterior.</li>
 </ol>
 <ol style="list-style-type: lower-alpha">
 <li>Determine si el conjunto genera a <span class="math inline">\(R^3\)</span>.</li>
+</ol>
+<p><span class="math display">\[
+    \begin{bmatrix}\frac{1}{3} &amp; -\frac{1}{3} &amp; 0 &amp; a\\ -7
+&amp; 0&amp;-7&amp;b\\0&amp;2&amp;\frac{1}{5}&amp;c\end{bmatrix}
+\underrightarrow{2R_1} \begin{bmatrix}1 &amp; -\frac{2}{3} &amp; 0 &amp;
+2a \\ -7 &amp;0&amp;-7&amp;b\\0&amp;2&amp;\frac{1}{5}&amp;c\end{bmatrix}
+\underrightarrow{7R1 + R_2} \\\begin{bmatrix}1&amp;-\frac{2}{3} &amp;
+0&amp;2a\\0&amp;-\frac{14}{3}&amp;-7&amp;14a+b\\0&amp;2&amp;\frac{1}{5}&amp;c\end{bmatrix}
+\underrightarrow{-\frac{3}{14}R_2}
+\begin{bmatrix}1&amp;-\frac{2}{3}&amp;0&amp;2a\\0&amp;1&amp;\frac{2}{3}&amp;-3a-\frac{3}{14}b\\0&amp;2&amp;\frac{1}{5}&amp;c\end{bmatrix}
+\underrightarrow{\frac{2}{3}R_2 + R1 \\-2R_2 +
+R_3}\\\begin{bmatrix}1&amp;0&amp;1&amp;-2a-\frac{1}{7}b\\0&amp;1&amp;\frac{3}{2}&amp;-3a-\frac{3}{14}b\\0&amp;0&amp;-\frac{14}{5}&amp;6a+\frac{3}{7}b-2c\end{bmatrix}
+\underrightarrow{-\frac{5}{14}R_3}
+\begin{bmatrix}1&amp;0&amp;1&amp;-2a-\frac{1}{7}b\\0&amp;1&amp;\frac{3}{2}&amp;-3a-\frac{3}{4}bb\\0&amp;0&amp;1&amp;6a+\frac{3}{7}b-c\end{bmatrix}
+\underrightarrow{-R_3 + R_1 \\ - \frac{3}{2}R_3 + R_2}
+\begin{bmatrix}1&amp;0&amp;0&amp;8a-\frac{4}{7}b
++2c\\0&amp;1&amp;0&amp;12a-\frac{6}{7}b+3c\\0&amp;0&amp;1&amp;6s+\frac{3}{7}b-2c\end{bmatrix}
+\\ \therefore \text{Si es consistente, genera } R^3
+  \]</span></p>
+<ol start="2" style="list-style-type: lower-alpha">
 <li>Genere un espacio vectorial de 3 elementos usando el conjunto de
 vectores.</li>
 <li>Con los vectores, construya un sistema de ecuaciones lineales
 homogéneo y determine la base de las soluciones del sistema.</li>
 </ol>
+<p><span class="math display">\[
+  \begin{bmatrix}0\\0\\0\end{bmatrix} = C_1\begin{bmatrix}\frac{1}{2} \\
+-7 \\ 0\end{bmatrix} + C_2\begin{bmatrix}-\frac{1}{3}\\0\\2\end{bmatrix}
++ C_3\begin{bmatrix}0\\-7\\\frac{1}{5}\end{bmatrix}
+  \]</span></p>
+<p><span class="math display">\[
+\left[\begin{matrix}0.5 &amp; -0.333333333333333 &amp; 0 &amp; 0\\-7.0
+&amp; 0 &amp; -7.0 &amp; 0\\0 &amp; 2.0 &amp; 0.2 &amp;
+0\end{matrix}\right]
+\underrightarrow{ R_{2} \leftrightarrow R_{1} }
+\left[\begin{matrix}-7.0 &amp; 0 &amp; -7.0 &amp; 0\\0.5 &amp;
+-0.333333333333333 &amp; 0 &amp; 0\\0 &amp; 2.0 &amp; 0.2 &amp;
+0\end{matrix}\right]
+\underrightarrow{ R_2 + (0.0714285714285714)R_1 }
+\left[\begin{matrix}-7.0 &amp; 0 &amp; -7.0 &amp; 0\\0 &amp;
+-0.333333333333333 &amp; -0.5 &amp; 0\\0 &amp; 2.0 &amp; 0.2 &amp;
+0\end{matrix}\right]
+\underrightarrow{ R_3 + (0)R_1 }
+\\
+\left[\begin{matrix}-7.0 &amp; 0 &amp; -7.0 &amp; 0\\0 &amp;
+-0.333333333333333 &amp; -0.5 &amp; 0\\0 &amp; 2.0 &amp; 0.2 &amp;
+0\end{matrix}\right]
+\underrightarrow{ R_{3} \leftrightarrow R_{2} }
+\left[\begin{matrix}-7.0 &amp; 0 &amp; -7.0 &amp; 0\\0 &amp; 2.0 &amp;
+0.2 &amp; 0\\0 &amp; -0.333333333333333 &amp; -0.5 &amp;
+0\end{matrix}\right]
+\underrightarrow{ R_3 + (0.166666666666667)R_2 }
+\\
+\left[\begin{matrix}-7.0 &amp; 0 &amp; -7.0 &amp; 0\\0 &amp; 2.0 &amp;
+0.2 &amp; 0\\0 &amp; 0 &amp; -0.466666666666667 &amp;
+0\end{matrix}\right]
+\underrightarrow{ R_{3} \leftrightarrow R_{3} }
+\left[\begin{matrix}-7.0 &amp; 0 &amp; -7.0 &amp; 0\\0 &amp; 2.0 &amp;
+0.2 &amp; 0\\0 &amp; 0 &amp; -0.466666666666667 &amp;
+0\end{matrix}\right]
+\underrightarrow{ \frac{R_3}{-0.466666666666667} }
+\left[\begin{matrix}-7.0 &amp; 0 &amp; -7.0 &amp; 0\\0 &amp; 2.0 &amp;
+0.2 &amp; 0\\0 &amp; 0 &amp; 1.0 &amp; 0\end{matrix}\right]
+\underrightarrow{ R_2 + (-0.2)R_3 }
+\left[\begin{matrix}-7.0 &amp; 0 &amp; -7.0 &amp; 0\\0 &amp; 2.0 &amp; 0
+&amp; 0\\0 &amp; 0 &amp; 1.0 &amp; 0\end{matrix}\right]
+\underrightarrow{ R_1 + (7.0)R_3 }
+\\
+\left[\begin{matrix}-7.0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 2.0 &amp; 0
+&amp; 0\\0 &amp; 0 &amp; 1.0 &amp; 0\end{matrix}\right]
+\underrightarrow{ \frac{R_2}{2.0} }
+\left[\begin{matrix}-7.0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1.0 &amp; 0
+&amp; 0\\0 &amp; 0 &amp; 1.0 &amp; 0\end{matrix}\right]
+\underrightarrow{ R_1 + (0)R_2 }
+\\
+\left[\begin{matrix}-7.0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1.0 &amp; 0
+&amp; 0\\0 &amp; 0 &amp; 1.0 &amp; 0\end{matrix}\right]
+\underrightarrow{ \frac{R_1}{-7.0} }
+\left[\begin{matrix}1.0 &amp; 0 &amp; 0 &amp; 0\\0 &amp; 1.0 &amp; 0
+&amp; 0\\0 &amp; 0 &amp; 1.0 &amp; 0\end{matrix}\right]
+  \]</span></p>
+<p><span class="math display">\[
+   \therefore \\
+   C_1 = C_2 = C_3 = 0
+  \]</span></p>
+<p>Sistema consistente, que genera a <span class="math inline">\(R^3\)</span></p>
 <ol start="7" style="list-style-type: decimal">
 <li><p>Sea <span class="math inline">\(V =
 \begin{pmatrix}-1\\5\end{pmatrix}\)</span> y <span class="math inline">\([V]_W = \begin{pmatrix}-2\\7\end{pmatrix}\)</span>
@@ -2433,6 +2609,61 @@ determine la base <span class="math inline">\(W\)</span>, sabiendo que
 \end{pmatrix}, \begin{pmatrix}2 \\ -2 \\ -1 \end{pmatrix},
 \begin{pmatrix}1\\1\\4\end{pmatrix} \right\}\)</span>. Calcule <span class="math inline">\(||V||\)</span> y <span class="math inline">\(||V_H||\)</span>. ¿Porué <span class="math inline">\(||V|| \ne ||V_H||\)</span>?</li>
 </ol>
+</div>
+<div id="rango-y-nulidad-de-una-matriz" class="section level2">
+<h2>Rango y Nulidad de una matriz</h2>
+<ol style="list-style-type: decimal">
+<li>Determine el valor de <span class="math inline">\(k\)</span> para
+que la matriz <span class="math inline">\(M\)</span> tenga <span class="math inline">\(V=2\)</span></li>
+</ol>
+<p><span class="math display">\[
+  M =
+\begin{bmatrix}1&amp;-1&amp;1&amp;4\\3&amp;-1&amp;3k&amp;1\\5&amp;-5&amp;7&amp;9\end{bmatrix}
+\therefore |M| \rightarrow k = \frac{5}{3}
+   \]</span></p>
+<p><span class="math display">\[
+   M =
+\begin{bmatrix}1&amp;-2&amp;1&amp;4\\3&amp;-1&amp;5&amp;1\\5&amp;-5&amp;7&amp;9\end{bmatrix}
+\underrightarrow{2R_2 + R_1 \\ -5R_2 + R_3}
+\begin{bmatrix}1&amp;0&amp;\frac{9}{5}&amp;-\frac{2}{5}\\0&amp;1&amp;\frac{2}{5}
+&amp; -\frac{11}{5} \\ 0&amp;0&amp;0&amp;0\end{bmatrix} \\ \therefore \\
+x = -\frac{9}{5}z + \frac{2}{5}w \\ y = -\frac{2}{5}z + \frac{11}{5}w \\
+z \in R \\ w \in R \\ \therefore \\ z\begin{bmatrix}-\frac{9}{5} \\
+-\frac{2}{5}\\1\\0\end{bmatrix}, w =
+\begin{bmatrix}\frac{2}{5}\\\frac{4}{5}\\0\\1\end{bmatrix} : V = 2
+   \]</span></p>
+<ol start="2" style="list-style-type: decimal">
+<li>Encuentre todos los valores posibles del rango de la matriz <span class="math inline">\(A\)</span> y <span class="math inline">\(P(A)\)</span>, si <span class="math inline">\(k\)</span> es una variable.</li>
+</ol>
+<p><span class="math display">\[
+   A =
+\begin{bmatrix}1&amp;2&amp;k\\-2&amp;4k&amp;2\\k&amp;-2&amp;1\end{bmatrix},
+|A| \rightarrow k = \begin{cases}-1\\2\end{cases}
+   \]</span></p>
+<p>K = -1 <span class="math display">\[
+   \begin{bmatrix}1&amp;2&amp;-1\\-2&amp;-4&amp;2\\-1&amp;-2&amp;1\end{bmatrix}
+\underrightarrow{2R_1 + R-2 \\ R_1 + R_2}
+\begin{bmatrix}1&amp;2&amp;-1\\0&amp;0&amp;0\\0&amp;0&amp;0\end{bmatrix}
+\\ \therefore \\ x = -2y + z \\ y \in R \\ z \in R\\ \therefore \\
+\begin{bmatrix}x\\y\\z\end{bmatrix} =
+\begin{bmatrix}-2y+z\\y\\z\end{bmatrix} \therefore
+y\begin{bmatrix}-2\\1\\0\end{bmatrix},
+z\begin{bmatrix}1\\0\\1\end{bmatrix}\\V(A)= 2, P(A) = 1
+   \]</span></p>
+<p>K = 2 <span class="math display">\[
+   \begin{bmatrix}1&amp;2&amp;2\\-2&amp;8&amp;2\\2&amp;-2&amp;1\end{bmatrix}
+\underrightarrow{2R_1 + R_2 \\ -2R_1 + R_3}
+\begin{bmatrix}1&amp;2&amp;2\\0&amp;12&amp;8\\0&amp;-6&amp;-3\end{bmatrix}
+\underrightarrow{ \frac{1}{12}R_2 } \\
+\begin{bmatrix}1&amp;2&amp;2\\0&amp;1&amp;\frac{2}{3}\\0&amp;-6&amp;-3\end{bmatrix}
+\underrightarrow{ -2R_2 + R_1 \\ 6R_2+R_3 }
+\begin{bmatrix}1&amp;0&amp;\frac{2}{3}\\0&amp;0&amp;\frac{2}{3}\\0&amp;0&amp;1\end{bmatrix}
+\underrightarrow{-\frac{2}{3}R_3 + R_1 \\ - \frac{2}{3}R_3 + R_2} \\
+\begin{bmatrix}1&amp;0&amp;1\\0&amp;1&amp;\frac{1}{2}\\0&amp;0&amp;1\end{bmatrix}
+\\ \therefore \\ x = 2 \\ y = -\frac{1}{2}z \\ z = 0 \\ \therefore \\
+\begin{bmatrix}x\\y\\z\end{bmatrix} = \begin{bmatrix}-2\\-\frac{1}{2}z
+\\0\end{bmatrix} = z\begin{bmatrix}-1\\-\frac{1}{2}\\0\end{bmatrix}
+   \]</span></p>
 </div>
 
 
